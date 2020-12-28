@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in</title>
+        <style>
+            h1{
+                color: maroon;
+                font-size: 2.5em;
+            }
+            
+            a{
+                color: crimson;
+                font-size: 1.5em;
+            }
+            form,button{
+                color: orangered;
+            }
+            .content {
+                max-width: 800px;
+                margin: auto;
+                background: #f7cac9;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body class="content">
+        <h1><img src="policelogo.png" height="100" width="80"/>   Criminal Record Management System</h1>
+        <hr/>
+        <nav class="navigationbar">
+            
+            <a href="home.html" style="margin-right:20px"> Home </a>
+            <a href="login.html" style="margin-right:20px"> Login/Signin </a>
+            <a href="about.html" style="margin-right:20px"> About </a>
+            <a href="devdetails.html" style="margin-right:20px"> Developer Details </a>
+            <a href="contact.html" style="margin-right:20px"> Contact Us </a>
+        </nav>
+        <hr/><br/>
+
+        <form action="connection.php" method="POST">
+            <label for="officerid">Enter User Id: </label><br/>
+            <input type="text" id="officerid" name="officerid" required><br/>
+            <br/>
+            <label for="deptcode">Enter department code: </label><br/>
+            <input type="text" id="deptcode" name="deptcode" required><br/>
+            <br/>
+            <label for="countrycode">Enter your CC: </label><br/>
+            <input type="text" id="countrtcode" name="countrycode" required><br/>
+            <br/>
+            <label for="badgenumber">Enter badge number as your password</label><br/>
+            <input type="password" id="badgenumber" name="badgenumber" required><br/>
+            <br/>
+            <button type="submit" name="submit">SignUp</button>
+        </form>
+        
+    </body>
+</html>
+
